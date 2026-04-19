@@ -39,7 +39,7 @@ nav,
 .lastfm { p { margin: .5em 0; }}
 
 .lastfm { min-height: 5.5em;
-  > summary:has(.is-visible) { visibility: visible !important; overflow-x: hidden; }
+  &:has(.is-visible) { visibility: visible !important; overflow-x: hidden; }
 }
 
 music-snitch { margin: -.5em 0; }
