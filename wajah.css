@@ -199,7 +199,7 @@ mark {
 .id,
 .no-display,
 .invisible,
-.time { display: none; }
+time { display: none; }
 
 section:has(article.invisible) { display: none;
   &:has(article.visible) { display: revert; }
