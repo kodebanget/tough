@@ -211,10 +211,6 @@ section:has(article.invisible) { display: none;
     span:nth-child(2) { display: none; }}
 }
 
-.left,
-.right { margin: 2em 5em; }
+.left { margin: 2em 5em; }
 
-.right { text-align: right; }
-
-dd{margin:15px}
-#\31 732799084>div>div{overflow-x:auto}
+.pin { margin: 1em 0 0 35px; }
