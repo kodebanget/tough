@@ -208,6 +208,7 @@ section:has(article.invisible) { display: none;
 .nutshell-bubble-overflow-section > div {
   > div:nth-child(1) > h4:last-of-type + p { display: none; }
   > div:nth-child(2) a { text-decoration: none;
+    time { display: revert }
     span:nth-child(2) { display: none; }}
 }
 
