@@ -212,6 +212,6 @@ section:has(article.invisible) { display: none;
     span:nth-child(2) { display: none; }}
 }
 
-.left { margin: 2em 5em; }
+.left { margin: 2em 5em; color:#c3a38a; }
 
 .pin { margin: 1em 0 0 35px; }
