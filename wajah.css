@@ -24,6 +24,7 @@ body {
   max-width: 650px;
   margin: 0 auto;
   line-height: 1.5;
+  font-variation-settings: 'MONO' .51;
 }
 
 header,
@@ -122,7 +123,12 @@ blockquote,
 i { font-style: normal; }
 
 pre,
-code { font-family: Recursive, monospace; }
+code {
+  font-family: Recursive, monospace;
+  font-variation-settings: 'MONO' 1;
+  font-weight: 325;
+  font-size:smaller;
+}
 
 pre {
   overflow-x: auto;
