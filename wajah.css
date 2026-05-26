@@ -14,7 +14,9 @@
   }
 }
 
-:not(iframe) { box-sizing: border-box; }
+:not(iframe) {
+  box-sizing: border-box;
+}
 
 body {
   background-color: var(--background);
@@ -24,7 +26,7 @@ body {
   max-width: 650px;
   margin: 0 auto;
   line-height: 1.5;
-  font-variation-settings: 'MONO' .51;
+  font-variation-settings: "MONO" 0.51;
 }
 
 header,
@@ -32,30 +34,53 @@ footer,
 nav,
 .lastfm,
 #for-once,
-.metadata { text-align: center;
-  summary { list-style: none; }
+.metadata {
+  text-align: center;
+
+  summary {
+    list-style: none;
+  }
 }
 
 nav,
-.lastfm { p { margin: .5em 0; }}
-
-.lastfm { min-height: 5.5em;
-  &:has(.is-visible) { visibility: visible !important; overflow-x: hidden; }
+.lastfm {
+  p {
+    margin: 0.5em 0;
+  }
 }
 
-music-snitch { margin: -.5em 0; }
+.lastfm {
+  min-height: 5.5em;
 
-::part(a) { color: var(--accent); }
+  &:has(.is-visible) {
+    visibility: visible !important;
+    overflow-x: hidden;
+  }
+}
 
-footer { padding: 15px; }
+music-snitch {
+  margin: -0.5em 0;
+}
+
+::part(a) {
+  color: var(--accent);
+}
+
+footer {
+  padding: 15px;
+}
 
 h1,
 h2,
 #notice,
 #for-once,
-i { font-variant-caps: small-caps; }
+i {
+  font-variant-caps: small-caps;
+}
 
-h1 { font-size: 1.75em; }
+h1 {
+  font-size: 1.75em;
+}
 
 .date {
   display: flex;
@@ -64,23 +89,44 @@ h1 { font-size: 1.75em; }
   left: calc((35px - 1lh) / 2);
 }
 
-h2 { font-size: 1em; color: var(--accent);
-  .date & { padding: 0; margin: 0;
-    margin-bottom: 45px; line-height: 1.5;
+h2 {
+  font-size: 1em;
+  color: var(--accent);
+
+  .date & {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 45px;
+    line-height: 1.5;
     writing-mode: sideways-lr;
-    align-self: flex-end; text-wrap: nowrap;
-    position: sticky; bottom: 10px; }
+    align-self: flex-end;
+    text-wrap: nowrap;
+    position: sticky;
+    bottom: 10px;
+  }
 }
 
-.day { position: relative; }
+.day {
+  position: relative;
+}
 
-.thought { padding: 0 15px 0 35px; margin: 0;
+.thought {
+  padding: 0 15px 0 35px;
+  margin: 0;
   scroll-margin-top: calc(40px + 1em);
+
   &:target span.anchor {
-    &::before, &::after { content: ' ———————— '; font-weight: bold; }}
+    &::before,
+    &::after {
+      content: " ———————— ";
+      font-weight: bold;
+    }
+  }
 }
 
-article .metadata { margin: 20px -15px 20px -35px; }
+article .metadata {
+  margin: 20px -15px 20px -35px;
+}
 
 p {
   margin: 15px 0;
@@ -88,17 +134,38 @@ p {
 }
 
 a,
-a.nutshell-expandable { color: var(--accent);
-  &:hover { text-decoration:none; }
-  &:not(.thought a), .metadata &, .rt-metadata & { text-decoration: none;
-    &:hover { text-decoration: underline; }}
+a.nutshell-expandable {
+  color: var(--accent);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:not(.thought a),
+  .metadata &,
+  .rt-metadata & {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
-.thought-text a[href^='#'] { color: #c3a38a;
-  &.nutshell-expandable, .rt-metadata & { background-color: unset; color: inherit; }
+.thought-text a[href^="#"] {
+  color: #c3a38a;
+
+  &.nutshell-expandable,
+  .rt-metadata & {
+    background-color: unset;
+    color: inherit;
+  }
 }
 
-ul { padding-left: 20px; list-style: '⬩ ' }
+ul {
+  padding-left: 20px;
+  list-style: "⬩ ";
+}
 
 blockquote,
 .nutshell-bubble blockquote {
@@ -107,27 +174,36 @@ blockquote,
   padding-left: 15px;
   text-wrap: balance;
   text-wrap: pretty;
+
   p:last-of-type:not(p:only-of-type) {
-    font-variation-settings: 'slnt' 0;
+    font-variation-settings: "slnt" 0;
     font-size: smaller;
-    &::before { content: '— '; }}
+
+    &::before {
+      content: "— ";
+    }
+  }
 }
 
 em,
 blockquote,
 .nutshell-bubble blockquote {
   font-style: normal;
-  font-variation-settings: 'slnt' -10, 'CRSV' 1;
+  font-variation-settings:
+    "slnt" -10,
+    "CRSV" 1;
 }
 
-i { font-style: normal; }
+i {
+  font-style: normal;
+}
 
 pre,
 code {
   font-family: Recursive, monospace;
-  font-variation-settings: 'MONO' 1;
+  font-variation-settings: "MONO" 1;
   font-weight: 325;
-  font-size:smaller;
+  font-size: smaller;
 }
 
 pre {
@@ -143,8 +219,16 @@ pre {
   border-radius: 5px;
 }
 
-hr { margin: 0; border: none; color: var(--accent);
-  &::before { content: '⬩⬩⬩'; display: block; text-align: center; }
+hr {
+  margin: 0;
+  border: none;
+  color: var(--accent);
+
+  &::before {
+    content: "⬩⬩⬩";
+    display: block;
+    text-align: center;
+  }
 }
 
 mark {
@@ -159,20 +243,39 @@ mark {
 }
 
 #changelog,
-#onthisday { padding-top: 30px; }
+#onthisday {
+  padding-top: 30px;
+}
 
 .thought:last-of-type .anchor {
-  &::before, &::after { font-weight: bold; }
+  &::before,
+  &::after {
+    font-weight: bold;
+  }
+
   .changelog:last-of-type &,
-  .changelog:has(+ #onthisday) & { &::before, &::after { content: ' ———————— '; }}
+  .changelog:has(+ #onthisday) & {
+    &::before,
+    &::after {
+      content: " ———————— ";
+    }
+  }
   .onthisday:last-of-type & {
-    &::before { content: ' ————— ' attr(data-m) ' '; }
-    &::after { content: ' ' attr(data-d) ' ————— '; }}
+    &::before {
+      content: " ————— " attr(data-m) " ";
+    }
+
+    &::after {
+      content: " " attr(data-d) " ————— ";
+    }
+  }
 }
 
 .backlinks {
   font-size: smaller;
-  font-variation-settings: 'slnt' -5, 'CRSV' 1;
+  font-variation-settings:
+    "slnt" -5,
+    "CRSV" 1;
 }
 
 .rt {
@@ -188,8 +291,15 @@ mark {
   font-size: smaller;
   padding: 0 10px;
   width: fit-content;
-  p& { margin: -35px auto 0 0; }
-  div& { text-align: right; margin: 0px 0 -30px auto; }
+
+  p& {
+    margin: -35px auto 0 0;
+  }
+
+  div& {
+    text-align: right;
+    margin: 0px 0 -30px auto;
+  }
 }
 
 .backtotop {
@@ -205,19 +315,41 @@ mark {
 .id,
 .no-display,
 .invisible,
-time { display: none; }
+time {
+  display: none;
+}
 
-section:has(article.invisible) { display: none;
-  &:has(article.visible) { display: revert; }
+section:has(article.invisible) {
+  display: none;
+
+  &:has(article.visible) {
+    display: revert;
+  }
 }
 
 .nutshell-bubble-overflow-section > div {
-  > div:nth-child(1) > h4:last-of-type + p { display: none; }
-  > div:nth-child(2) a { text-decoration: none;
-    time { display: revert }
-    span:nth-child(2) { display: none; }}
+  > div:nth-child(1) > h4:last-of-type + p {
+    display: none;
+  }
+
+  > div:nth-child(2) a {
+    text-decoration: none;
+
+    time {
+      display: revert;
+    }
+
+    span:nth-child(2) {
+      display: none;
+    }
+  }
 }
 
-.left { margin: 2em 5em; color:#c3a38a; }
+.left {
+  margin: 2em 5em;
+  color: #c3a38a;
+}
 
-.pin { margin: 1em 0 0 35px; }
+.pin {
+  margin: 1em 0 0 35px;
+}
