@@ -203,10 +203,10 @@ code {
   font-family: Recursive, monospace;
   font-variation-settings: "MONO" 1;
   font-weight: 325;
-  font-size: smaller;
 }
 
 pre {
+  font-size: smaller;
   overflow-x: auto;
   line-height: 0.7;
   padding: 5px;
@@ -217,6 +217,7 @@ pre {
   padding: 2px;
   border: 1px dotted;
   border-radius: 5px;
+  font-size: smaller;
 }
 
 hr {
