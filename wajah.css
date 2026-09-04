@@ -272,13 +272,6 @@ mark {
   }
 }
 
-.backlinks {
-  font-size: smaller;
-  font-variation-settings:
-    "slnt" -5,
-    "CRSV" 1;
-}
-
 .rt {
   border: 2px dotted var(--accent);
   border-radius: 20px;
